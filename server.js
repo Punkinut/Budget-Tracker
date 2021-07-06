@@ -1,9 +1,10 @@
 const express = require("express");
 const logger = require("morgan");
+const routes = require('./routes');
 const compression = require("compression");
 require("./config/connection");
 
-const PORT = 3000;
+const PORT = 3001;
 
 const app = express();
 
@@ -16,7 +17,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // routes
-app.use(require("./routes/api.js"));
+app.use(routes);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);

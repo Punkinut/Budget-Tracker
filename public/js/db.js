@@ -69,3 +69,5 @@ const saveRecord = (record) => {
     const store = transaction.objectStore('BudgetStore');
     store.add(record);
   };
+
+  window.addEventListener('online', checkDatabase);

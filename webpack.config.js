@@ -1,9 +1,8 @@
 const config = {
     entry: "/public/js/index.js",
     output: {
-      path: __dirname + "/dist",
+      path: __dirname + "/public/dist",
       filename: "bundle.js",
-      publicPath: '/'
     },
     mode: "production"
   };

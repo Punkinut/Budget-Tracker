@@ -21,3 +21,17 @@ request.onupgradeneeded = function (e) {
 request.onerror = function (e) {
   console.log(`Woops! ${e.target.errorCode}`);
 };
+
+function checkDatabase() {
+    console.log('check db invoked');
+  
+    // Open a transaction on your BudgetStore db
+    let transaction = db.transaction(['BudgetStore'], 'readwrite');
+  
+    // access your BudgetStore object
+    const store = transaction.objectStore('BudgetStore');
+  
+    // Get all records from store and set to a variable
+    const getAll = store.getAll();
+
+  }

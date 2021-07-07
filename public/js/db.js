@@ -54,7 +54,7 @@ function checkDatabase() {
 }
 
 request.onsuccess = function (e) {
-  console.log('success');
+  console.log('Success');
   db = e.target.result;
 
   if (navigator.onLine) {

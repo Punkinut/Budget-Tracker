@@ -51,4 +51,14 @@ function checkDatabase() {
             });
         }
       };
+}
+
+request.onsuccess = function (e) {
+  console.log('success');
+  db = e.target.result;
+
+  if (navigator.onLine) {
+    console.log('Backend online! 🗄️');
+    checkDatabase();
   }
+};

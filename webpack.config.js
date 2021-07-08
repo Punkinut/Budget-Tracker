@@ -6,6 +6,7 @@ const config = {
     output: {
       path: __dirname + "/public/dist",
       filename: "bundle.js",
+      publicPath: "",
     },
     mode: "production",
     plugins: [
@@ -16,6 +17,7 @@ const config = {
   
         name: "Budget Tracker",
         short_name: "Budget Tracker",
+        description: " An app that helps you track your transactions!",
         theme_color: "#ffffff",
         background_color: "#ffffff",
         start_url: "/",
@@ -27,7 +29,7 @@ const config = {
               __dirname,
               "public/images/icons/icon-512x512.png"
               ),
-            size: [32, 64, 128, 256, 512]
+            size: [32, 64, 128, 256, 512],
           }
         ]
       })

@@ -48,7 +48,7 @@ function populateChart() {
   // create date labels for chart
   let labels = reversed.map(t => {
     let date = new Date(t.date);
-    return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+    return `${date.getDate()} | ${date.getMonth() + 1} `;
   });
 
   // create incremental values for chart
@@ -69,12 +69,20 @@ function populateChart() {
       data: {
         labels,
         datasets: [{
-            label: "Total Over Time",
-            fill: true,
-            backgroundColor: "#6666ff",
-            data
+            borderColor: "#4074fc",
+            data,
+            pointRadius: 8,
+            pointHoverRadius: 8
         }]
-    }
+    },
+    options: {
+      legend: {
+         display: false
+      },
+      tooltips: {
+         enabled: false
+      }
+ }
   });
 }
 

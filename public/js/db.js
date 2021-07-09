@@ -23,7 +23,6 @@ request.onerror = function (e) {
 };
 
 function checkDatabase() {
-    console.log('check db invoked');
   
     let transaction = db.transaction(['BudgetStore'], 'readwrite');
     const store = transaction.objectStore('BudgetStore');

@@ -1,9 +1,15 @@
-body {
-  font-size: 120%;
-  font-family: Arial;
+:root {
+  --dark-blue: #323243;
 }
 
-button, input {
+body {
+  font-size: 120%;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+button,
+input {
   font-size: 100%;
   font-family: Arial;
 }
@@ -12,14 +18,9 @@ table {
   width: 100%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+td,
+th {
   text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
 
 .error {
@@ -46,6 +47,10 @@ tr:nth-child(even) {
   text-align: left;
   max-height: 300px;
   overflow: auto;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  padding: 25px;
 }

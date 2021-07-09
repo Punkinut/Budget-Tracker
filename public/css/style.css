@@ -2,6 +2,26 @@
   --dark-blue: #323243;
 }
 
+.font {
+  font-family: "Roboto", sans-serif;
+}
+
+.f400 {
+  font-weight: 400;
+}
+
+.f500 {
+  font-weight: 500;
+}
+
+.f700 {
+  font-weight: 700;
+}
+
+.f900 {
+  font-weight: 900;
+}
+
 body {
   font-size: 120%;
   background-color: var(--dark-blue);
@@ -20,7 +40,8 @@ table {
 
 td,
 th {
-  text-align: left;
+  text-align: center;
+  padding: 10px 0px;
 }
 
 .error {
@@ -45,12 +66,16 @@ th {
 
 .transactions {
   text-align: left;
-  max-height: 300px;
+  height: 250px;
   overflow: auto;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 20px;
+  width: 90%;
+  border-radius: 25px;
   background-color: white;
   color: black;
   padding: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }

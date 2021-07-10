@@ -47,6 +47,15 @@ body {
   display: none;
 }
 
+.time-year {
+  background-color: #ffdc74;
+  padding: 12px 20px;
+  font-size: 12px;
+  border-radius: 50px;
+  position: relative;
+  top: 40px;
+}
+
 .welcome {
   padding-top: 41px;
   font-size: 28px;
@@ -135,6 +144,8 @@ th {
   }
 
   .new-trans {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -1,9 +1,10 @@
 :root {
-  --dark-blue: #000000;
+  --dark-blue: #28242c;
 }
 
 .font {
-  font-family: "Roboto", sans-serif !important;
+  font-family: nunito-sans, sans-serif !important;
+  opacity: 95%;
 }
 
 .f400 {
@@ -26,6 +27,17 @@ body {
   font-size: 120%;
   background-color: var(--dark-blue);
   color: white;
+}
+
+.myChart {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 80px;
+}
+
+.welcome {
+  padding-top: 38px;
+  font-size: 28px;
 }
 
 button,
@@ -58,11 +70,13 @@ th {
   font-size: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: none;
 }
 
 .form {
   margin-top: 25px;
   width: 100%;
+  display: none;
 }
 
 .transactions {
@@ -78,4 +92,5 @@ th {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  display: none;
 }

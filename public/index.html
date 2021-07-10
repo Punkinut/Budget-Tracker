@@ -12,23 +12,25 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="manifest" href="dist/manifest.json" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/nwd3ukw.css">
   <title>Budget Tracker</title>
 </head>
 <body>
   <div class="wrapper">
+    <p class="font welcome">Welcome</p>
     <div class="total">
-      <div class="total">Total $<span id="total">0</span></div>
+      <div class="total font">Total $<span id="total">0</span></div>
     </div>
 
-    <!-- <div class="form">
+    <div class="form">
       <input type="text" id="t-name" placeholder="Name of transaction" />
       <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
       <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
       <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
       <p class="error"></p>
-    </div> -->
-    <canvas id="myChart"></canvas>
+    </div>
+    <canvas id="myChart" class="myChart"></canvas>
     <div class="transactions">
       <table>
         <thead>

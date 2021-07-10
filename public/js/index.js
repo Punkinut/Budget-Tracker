@@ -64,15 +64,18 @@ function populateChart() {
 
   let ctx = document.getElementById("myChart").getContext("2d");
 
+
   myChart = new Chart(ctx, {
     type: 'line',
       data: {
         labels,
         datasets: [{
-            borderColor: "#4074fc",
+            backgroundColor : 'rgba(255, 255, 255, 0.144)',
+            borderColor: "white",
+            pointBackgroundColor: "white",
             data,
-            pointRadius: 8,
-            pointHoverRadius: 8
+            pointRadius: 7,
+            pointHoverRadius: 7
         }]
     },
     options: {
@@ -80,7 +83,25 @@ function populateChart() {
          display: false
       },
       tooltips: {
-         enabled: false
+         enabled: true
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            display: false
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            display: false
+          },
+          gridLines: {
+            color: "rgba(0, 0, 0, 0)",
+          }
+        }]
       }
  }
   });

@@ -25,6 +25,7 @@
         <p class="dollar">$<span id="total">0</span></p>
       </section>
     </section>
+    
 
     <div class="form">
       <input type="text" id="t-name" placeholder="Name of transaction" />
@@ -35,11 +36,13 @@
     </div>
     <canvas id="myChart" class="myChart"></canvas>
     <section class="view-trans">
+      <p class="open add view font">Add</p>
       <p class="open view font">Transactions</p>
     </section>
     <section class="new-trans">
+      <p class="open font">Add</p>
       <p class="open font">Transactions</p>
-      <p class="time-year font">This Year</p>
+      <p class="time-year font">Add</p>
     </section>
     <section class="tableme font">
       <section>
@@ -69,8 +72,10 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/dist/bundle.js"></script>
   <script src="/js/db.js"></script>
+  <script src="/js/clicks.js"></script>
   <script type="text/javascript">
     (function() {
       if("serviceWorker" in navigator) {

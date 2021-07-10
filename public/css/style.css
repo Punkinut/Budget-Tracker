@@ -32,9 +32,19 @@ body {
 .myChart {
   margin-left: auto !important;
   margin-right: auto !important;
-  margin-top: 100px;
-  border: 2px solid white;
-  border-radius: 20px;
+  margin-top: 20px;
+  border-radius: 0px 0px 20px 20px;
+  border-top: none;
+}
+
+.new-trans {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.144),
+    rgba(255, 255, 255, 0)
+  );
+  color: #28242c;
+  height: 100px;
+  display: none;
 }
 
 .welcome {
@@ -44,9 +54,12 @@ body {
 }
 
 .total-amount {
-  position: absolute;
-  bottom: -80px;
-  left: 50px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.336);
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dollar {
@@ -113,4 +126,15 @@ th {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   display: none;
+}
+
+@media screen and (max-width: 825px) {
+  .myChart {
+    border: none;
+    border-radius: 0px;
+  }
+
+  .new-trans {
+    display: block;
+  }
 }

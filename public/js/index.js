@@ -82,8 +82,8 @@ function populateChart() {
       layout: {
         padding: {
           left: -10,
-          bottom: -10
-        }
+          bottom: -10,
+        },
       },
       legend: {
          display: false

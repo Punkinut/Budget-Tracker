@@ -94,9 +94,9 @@ body {
   font-size: 17px !important;
   display: grid;
   grid-template: 130px / 120px 120px;
-  margin-top: 10px;
+  margin-top: 18px;
   justify-content: center;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .left {
@@ -208,5 +208,10 @@ th {
 
   .tableme {
     display: block;
+    width: 90%;
+  }
+
+  .data {
+    grid-template: 130px / 100px 100px;
   }
 }

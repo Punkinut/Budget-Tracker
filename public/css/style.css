@@ -205,9 +205,16 @@ th {
     align-items: center;
     justify-content: center;
   }
+}
 
+@media screen and (max-width: 550px) {
   .tableme {
     display: block;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .tableme {
     width: 90%;
   }
 

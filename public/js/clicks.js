@@ -1,6 +1,8 @@
 // Click event that opens up the transactions
-$('.open').on('click', () => {
+$('.tranny').on('click', () => {
     // Open transactions
+    $('.desk-table').toggleClass('block');
+    // console.log(`${$('.tranny').text()}`)
 })
 
 $('.time-year').on('click', () => {

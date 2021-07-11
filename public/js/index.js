@@ -25,10 +25,10 @@ function populateTotal() {
 }
 
 function populateTable() {
-  let lBody = document.querySelector(".left");
-  lBody.innerHTML = "";
-  let rBody = document.querySelector(".right");
-  rBody.innerHTML = "";
+  let lBody = $('.left')
+  lBody.text('');
+  let rBody = $('.right')
+  rBody.text('');
 
   let tbody = document.querySelector("#tbody");
   tbody.innerHTML = "";
@@ -36,17 +36,17 @@ function populateTable() {
   transactions.forEach(transaction => {
     let p1 = document.createElement("p");
     p1.innerHTML = `${transaction.name}`
-    lBody.appendChild(p1)
+    lBody.append(p1)
 
     let p2 = document.createElement("p");
     if (transaction.value < 0) {
       const newV = (transaction.value).toString();
 
       p2.innerHTML = `- $${newV.slice(1)}`
-      rBody.appendChild(p2)
+      rBody.append(p2)
     } else {
       p2.innerHTML = `$${transaction.value}`
-      rBody.appendChild(p2)
+      rBody.append(p2)
     }
     
     let tr = document.createElement("tr");

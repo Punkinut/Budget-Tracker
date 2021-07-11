@@ -4,7 +4,7 @@ const routes = require('./routes');
 const compression = require("compression");
 require("./config/connection");
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 

@@ -6,14 +6,13 @@ const FILES_TO_CACHE = [
     "/dist/bundle.js",
     "/css/style.css",
     "/images/close.png",
-    "/icons/icon-32x32.png",
-    "/icons/icon-64x64.png",
-    "/icons/icon-128x128.png",
-    "/icons/icon-256x256.png",
-    "/icons/icon-512x512.png",
+    "images/icons/icon-32x32.png",
+    "images/icons/icon-64x64.png",
+    "images/icons/icon-128x128.png",
+    "images/icons/icon-256x256.png",
+    "images/icons/icon-512x512.png",
     "/js/db.js",
-    "/js/clicks.js",
-    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    "/js/clicks.js"
   ];
 
 

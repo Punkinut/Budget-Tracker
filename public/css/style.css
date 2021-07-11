@@ -74,6 +74,21 @@ body {
   border-radius: 50px;
   position: relative;
   top: 40px;
+  cursor: pointer;
+}
+
+.add-container {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.068);
+  display: none;
 }
 
 .open {

@@ -5,6 +5,7 @@ $('.tranny').on('click', () => {
     // console.log(`${$('.tranny').text()}`)
 })
 
-$('.time-year').on('click', () => {
+$('.add').on('click', () => {
     // Open Menu to add transaction
+    $('.add-container').css('display', 'block');
 })

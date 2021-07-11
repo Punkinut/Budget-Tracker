@@ -19,3 +19,8 @@ $('#sub-btn').on('click', () => {
     // Open Menu to add transaction
     $('.add-container').css('display', 'none');
 })
+
+$('.close').on('click', () => {
+    // Open Menu to add transaction
+    $('.add-container').css('display', 'none');
+})

@@ -19,13 +19,13 @@ I wanted the functionality to be as simple as possible. I strived to do my due d
 
 Here users can view a personlised graph representing their transactions.
 
-![Dashboard](./public/images/Dashboard.png)
+<img src="./public/images/Dashboard.png" width="320px" />
 
 ## Adding Transactions
 
 In this model you can decide to add or subtract funds to your balance.
 
-![Transaction Model](./public/images/Model.png)
+<img src="./public/images/Model.png" width="320px" />
 
 ## End note
 

@@ -5,7 +5,7 @@ A Full-Stack application using mongoDB, mongoose and express | Deployed On Herok
 ## Deployment
 
 My Budget Tracker has been deployed here:
-[Fitness Tracker](https://punkinut-budget-tracker.herokuapp.com/)
+[Budget Tracker](https://punkinut-budget-tracker.herokuapp.com/)
 
 ## Why make this?
 
